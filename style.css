@@ -18,11 +18,11 @@ nav a:hover { opacity:0.6; }
 .btn:hover, button:hover { opacity:0.8; }
 
 
-.products { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; padding:40px; }
-.product { border:1px solid #ddd; padding:20px; text-align:center; transition:transform .3s; }
-.product:hover { transform:translateY(-5px); }
-.img-wrap { position:relative; width:100%; height:300px; overflow:hidden; }
-.img-wrap img { position:absolute; width:100%; height:100%; object-fit:cover; transition:opacity .4s ease; }
+.products { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; padding:30px; }
+.product { border:1px solid #ddd; padding:15px; text-align:center; transition:transform .3s; }
+.product:hover { transform:translateY(-4px); }
+.img-wrap { position:relative; width:100%; height:240px; overflow:hidden; }
+.img-wrap img { position:absolute; width:100%; height:100%; object-fit:cover; transition:opacity .35s ease; }
 .img-back { opacity:0; }
 .product:hover .img-back { opacity:1; }
 .product:hover .img-front { opacity:0; }
