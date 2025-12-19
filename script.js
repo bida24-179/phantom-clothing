@@ -43,3 +43,23 @@ renderCart();
 
 
 renderCart();
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slides img');
+
+function showSlide(index) {
+  slides.forEach((img, i) => {
+    img.classList.toggle('active', i === index);
+  });
+}
+
+function moveSlide(step) {
+  currentSlide = (currentSlide + step + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Initialize
+showSlide(currentSlide);
+</script>
+
